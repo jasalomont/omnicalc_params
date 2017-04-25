@@ -1,1 +1,2 @@
-<h1>A <%= @user_years %> year loan of $<%= @user_loan %>, with an annual interest rate of <%= @user_rate/100 %>%, requires a monthly payment of $<%= @payment %></h1>
+<h1>Flexible Payment</h1>
+<h3>A <%= @user_years %> year loan of <%=number_to_currency( @user_loan) %>, with an annual interest rate of <%= @user_rate/100 %>%, requires a monthly payment of <%= number_to_currency(@payment,precision:2) %></h3>

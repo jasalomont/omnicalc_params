@@ -1,0 +1,16 @@
+<h1>Random Results</h1>
+<div>
+  <h3>Minimum</h3>
+  <h4><%=@user_min  %></h4>
+</div>
+<div>
+  <h3>Maximum</h3>
+  <h4><%=@user_max %></h4>
+</div>
+
+<div>
+  <h3>Random Number</h3>
+    <h4>
+      <%= @random_result.round(2) %>
+    </h4>
+</div>

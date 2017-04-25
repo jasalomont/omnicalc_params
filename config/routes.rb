@@ -7,4 +7,17 @@ get("/flexible/random/:number1/:number2",{:controller => "calculations", :action
 
 get("/square/new", {:controller => "calculations", :action => "square_form"})
 get("/square/results", {:controller => "calculations", :action => "square"})
+#Square Root Form
+get("/square_root/new", {:controller => "calculations", :action => "square_root_form"})
+get("/square_root/results", {:controller => "calculations", :action => "square_root"})
+#Payment Form
+get("/payment/new", {:controller => "calculations", :action => "payment_form"})
+get("/payment/results", {:controller => "calculations", :action => "payment"})
+
+#Random Form
+get("/random/new", {:controller => "calculations", :action => "random_form"})
+get("/random/results", {:controller => "calculations", :action => "random"})
+
+#Main Page
+get("/", {:controller => "calculations", :action => "view"})
 end

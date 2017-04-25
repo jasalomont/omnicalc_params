@@ -1,0 +1,18 @@
+<h1>Payment Results</h1>
+<div>
+  <h3>APR</h3>
+  <h4><%=@user_apr  %></h4>
+</div>
+<div>
+  <h3>Number of years</h3>
+  <h4><%=@user_years %></h4>
+</div>
+<div>
+  <h3>Principal</h3>
+  <h4><%=@user_principal  %></h4>
+</div>
+<div>
+  <h3>The monthly payment due is </h3>
+    <h4>$<%= number_to_currency((((@user_apr/12/100)*@user_principal) /(1-((1+@user_apr/12/100)**(-@user_years*12)))), precision:2)%>
+    </h4>
+</div>
